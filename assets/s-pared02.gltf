@@ -15,7 +15,7 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "Object_7.002"
+            "name" : "Object_3"
         }
     ],
     "materials" : [
@@ -26,22 +26,22 @@
                 0,
                 0
             ],
-            "name" : "Material_2.004",
+            "name" : "Material_2.028",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
-                    0.795487105846405,
-                    0.754638671875,
+                    0.6304842233657837,
+                    0.06189356744289398,
                     0.9803925156593323,
                     1
                 ],
                 "metallicFactor" : 1,
-                "roughnessFactor" : 0.2573314309120178
+                "roughnessFactor" : 0.5527864098548889
             }
         }
     ],
     "meshes" : [
         {
-            "name" : "Object_7.002",
+            "name" : "Object_3.003",
             "primitives" : [
                 {
                     "attributes" : {

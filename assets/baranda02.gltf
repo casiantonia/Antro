@@ -15,7 +15,7 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "Object_7"
+            "name" : "Object_4"
         }
     ],
     "materials" : [
@@ -26,7 +26,7 @@
                 0,
                 0
             ],
-            "name" : "Material_2.013",
+            "name" : "Material_2.023",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
                     0.6304842233657837,
@@ -41,7 +41,7 @@
     ],
     "meshes" : [
         {
-            "name" : "Object_7",
+            "name" : "Object_4.003",
             "primitives" : [
                 {
                     "attributes" : {

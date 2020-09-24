@@ -13,83 +13,87 @@
     <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
 </head>
 <body>
-     <a-scene physics="gravity:-2; debug:true">
+     <a-scene physics="gravity:-9">
+     <!-- <a-scene physics="gravity:-9; debug:true">     -->
+         
  
        <a-entity id="rig" movement-controls kinematic-body>
          <a-entity id="camera" camera position="0 2 0" look-controls></a-entity>
          </a-entity> 
 
         <a-assets>
+            
             <a-asset-item id="bbhermoso" src="./assets/bbhermoso.gltf"></a-asset-item>
-            <a-asset-item id="casamaterialok" src="./assets/casamaterialok.gltf"></a-asset-item>
-            <!-- <a-asset-item id="casa-suelo" src="./assets/casa-suelo.gltf"></a-asset-item> -->
-            <a-asset-item id="pared-01" src="./assets/pared-01.gltf"></a-asset-item>
-            <a-asset-item id="pared-02" src="./assets/pared-02.gltf"></a-asset-item>
-            <a-asset-item id="pared-03" src="./assets/pared-03.gltf"></a-asset-item>
-            <a-asset-item id="pared-04" src="./assets/pared-04.gltf"></a-asset-item>
-            <a-asset-item id="pared-05" src="./assets/pared-05.gltf"></a-asset-item>
-            <a-asset-item id="pared-06" src="./assets/pared-06.gltf"></a-asset-item>
-            <a-asset-item id="pared-07" src="./assets/pared-07.gltf"></a-asset-item>
-            <a-asset-item id="pared-08" src="./assets/pared-08.gltf"></a-asset-item>
-            <a-asset-item id="pared-09" src="./assets/pared-09.gltf"></a-asset-item>
-            <a-asset-item id="pared-10" src="./assets/pared-10.gltf"></a-asset-item>
-            <a-asset-item id="muro-01" src="./assets/muro-01.gltf"></a-asset-item>
-            <a-asset-item id="muro-02" src="./assets/muro-02.gltf"></a-asset-item>
-            <a-asset-item id="muro-03" src="./assets/muro-03.gltf"></a-asset-item>
-            <a-asset-item id="base-01" src="./assets/base-01.gltf"></a-asset-item>
-            <a-asset-item id="base-02" src="./assets/base-02.gltf"></a-asset-item>
-            <a-asset-item id="base-03" src="./assets/base-03.gltf"></a-asset-item>
-            <a-asset-item id="techo" src="./assets/techo.gltf"></a-asset-item>
-            <a-asset-item id="suelo-01" src="./assets/suelo-01.gltf"></a-asset-item>
-            <a-asset-item id="suelo-02" src="./assets/suelo-02.gltf"></a-asset-item>
-            <a-asset-item id="spared-01" src="./assets/spared-01.gltf"></a-asset-item>
-            <a-asset-item id="spared-02" src="./assets/spared-02.gltf"></a-asset-item>
-            <a-asset-item id="spared-03" src="./assets/spared-03.gltf"></a-asset-item>
-            <a-asset-item id="spared-04" src="./assets/spared-04.gltf"></a-asset-item>
-            <a-asset-item id="spared-05" src="./assets/spared-05.gltf"></a-asset-item>
-            <a-asset-item id="spared-06" src="./assets/spared-06.gltf"></a-asset-item>
-            <a-asset-item id="ssuelo-01" src="./assets/ssuelo-01.gltf"></a-asset-item>             
+            <a-asset-item id="suelo01" src="./assets/suelo01.gltf"></a-asset-item>   
+            <a-asset-item id="suelo02" src="./assets/suelo02.gltf"></a-asset-item>  
+            <a-asset-item id="suelo03" src="./assets/suelo03.gltf"></a-asset-item>
+            <a-asset-item id="suelo04" src="./assets/suelo04.gltf"></a-asset-item>
+            <a-asset-item id="techo" src="./assets/techo.gltf"></a-asset-item>          
+            <a-asset-item id="pared01" src="./assets/pared01.gltf"></a-asset-item>
+            <a-asset-item id="pared02" src="./assets/pared02.gltf"></a-asset-item>
+            <a-asset-item id="pared03" src="./assets/pared03.gltf"></a-asset-item>
+            <a-asset-item id="pared04" src="./assets/pared04.gltf"></a-asset-item>
+            <a-asset-item id="pared05" src="./assets/pared05.gltf"></a-asset-item>   
+            <a-asset-item id="pared06" src="./assets/pared06.gltf"></a-asset-item>
+            <a-asset-item id="pared07" src="./assets/pared07.gltf"></a-asset-item>
+            <a-asset-item id="pared08" src="./assets/pared08.gltf"></a-asset-item>
+            <a-asset-item id="pared09" src="./assets/pared09.gltf"></a-asset-item>
+            <a-asset-item id="pared10" src="./assets/pared10.gltf"></a-asset-item>
+            <a-asset-item id="pared10" src="./assets/pared10.gltf"></a-asset-item>
+            <a-asset-item id="baranda01" src="./assets/baranda01.gltf"></a-asset-item>
+            <a-asset-item id="baranda02" src="./assets/baranda02.gltf"></a-asset-item>
+            <a-asset-item id="baranda03" src="./assets/baranda03.gltf"></a-asset-item> 
+            <a-asset-item id="baranda04" src="./assets/baranda04.gltf"></a-asset-item>
+            <a-asset-item id="s-pared01" src="./assets/s-pared01.gltf"></a-asset-item> 
+            <a-asset-item id="s-pared02" src="./assets/s-pared02.gltf"></a-asset-item>
+            <a-asset-item id="s-pared03" src="./assets/s-pared03.gltf"></a-asset-item> 
+            <a-asset-item id="s-pared04" src="./assets/s-pared04.gltf"></a-asset-item>
+            <a-asset-item id="s-suelo01" src="./assets/s-suelo.gltf"></a-asset-item> 
+           
             <img id="parque" src="./assets/parque.jpg">
             <img id="concreto" src="./assets/concreto.jpg">
             <audio id="thunder" src="./assets/thunder.mp3" preload="auto"></audio>
             
         </a-assets>
-        <a-entity environment="preset: starry"></a-entity>
-        <!-- <a-sky src="#parque"></a-sky> -->
-        <a-box static-body position="0 0 2" width="1" height="1" rotation="45 45 45" src="#concreto"></a-box>
+        <a-entity environment="preset: starry"></a-entity>    
+
+        <!-- <a-box static-body position="0 0 2" width="1" height="1" rotation="45 45 45" src="#concreto"></a-box> -->
         <a-entity light="color: #ffcc85; groundColor: #ffffff" position="0 12 -16" rotation=""></a-entity>
         <a-entity light="type: spot; color: #ffdf6b"></a-entity>
         <!-- <a-entity sound="src:#thunder; autoplay: true" position=" 1 2 3"></a-entity> -->
         
        
-        <!-- CASA -->
-        <a-entity static-body gltf-model="assets/casa-suelo.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
-        <a-entity static-body gltf-model="assets/pared-01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
-        <a-entity static-body gltf-model="assets/pared-02.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
-        <a-entity static-body gltf-model="assets/pared-03.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
-        <a-entity static-body gltf-model="assets/pared-04.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
-        <a-entity static-body gltf-model="assets/pared-05.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
-        <a-entity static-body gltf-model="assets/pared-06.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity static-body gltf-model="assets/pared-07.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
-        <a-entity static-body gltf-model="assets/pared-08.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity static-body gltf-model="assets/pared-09.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity static-body gltf-model="assets/pared-10.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity static-body gltf-model="assets/muro-01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity static-body gltf-model="assets/muro-02.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity static-body gltf-model="assets/muro-03.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity gltf-model="assets/techo.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity static-body gltf-model="assets/suelo-01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity gltf-model="assets/suelo-02.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <!-- ANTRO PISO 1 -->
+        <a-entity static-body gltf-model="assets/suelo01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
+        <a-entity static-body gltf-model="assets/suelo01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
+        <a-entity static-body gltf-model="assets/suelo02.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <a-entity gltf-model="assets/suelo03.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
+        <a-entity static-body gltf-model="assets/suelo04.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
+        <a-entity static-body gltf-model="assets/pared01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
+        <a-entity static-body gltf-model="assets/pared02.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
+        <a-entity static-body gltf-model="assets/pared03.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
+        <a-entity static-body gltf-model="assets/pared04.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
+        <a-entity static-body gltf-model="assets/pared05.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
+        <a-entity static-body gltf-model="assets/pared06.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <a-entity static-body gltf-model="assets/pared07.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
+        <a-entity static-body gltf-model="assets/pared08.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <a-entity static-body gltf-model="assets/pared09.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <a-entity static-body gltf-model="assets/pared10.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <a-entity static-body gltf-model="assets/baranda01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <a-entity static-body gltf-model="assets/baranda02.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <a-entity static-body gltf-model="assets/baranda03.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <a-entity static-body gltf-model="assets/baranda04.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <a-entity static-body gltf-model="assets/s-suelo.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
 
+        <a-entity gltf-model="assets/techo.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+     
         <!-- SOTANO -->
-        <a-entity static-body gltf-model="assets/spared-01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity static-body gltf-model="assets/spared-02.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity static-body gltf-model="assets/spared-03.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity static-body gltf-model="assets/spared-04.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity static-body gltf-model="assets/spared-05.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity static-body gltf-model="assets/spared-06.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity static-body gltf-model="assets/spared-01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
-        <a-entity static-body gltf-model="assets/ssuelo-01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <a-entity static-body gltf-model="assets/s-pared01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <a-entity static-body gltf-model="assets/s-pared02.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <a-entity static-body gltf-model="assets/s-pared03.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <a-entity static-body gltf-model="assets/s-pared04.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <a-entity static-body gltf-model="assets/s-pared01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
+        <a-entity static-body gltf-model="assets/s-suelo01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
 
 
 

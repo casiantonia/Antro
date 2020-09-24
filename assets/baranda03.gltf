@@ -15,7 +15,7 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "Object_4.002"
+            "name" : "Object_19"
         }
     ],
     "materials" : [
@@ -26,22 +26,22 @@
                 0,
                 0
             ],
-            "name" : "Material_2.009",
+            "name" : "Material_2.025",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
-                    0.795487105846405,
-                    0.754638671875,
+                    0.6304842233657837,
+                    0.06189356744289398,
                     0.9803925156593323,
                     1
                 ],
                 "metallicFactor" : 1,
-                "roughnessFactor" : 0.2573314309120178
+                "roughnessFactor" : 0.5527864098548889
             }
         }
     ],
     "meshes" : [
         {
-            "name" : "Object_4.002",
+            "name" : "Object_19",
             "primitives" : [
                 {
                     "attributes" : {
@@ -61,14 +61,14 @@
             "componentType" : 5126,
             "count" : 24,
             "max" : [
-                -4.840000152587891,
-                0.0715508759021759,
-                -3.8399999141693115
+                -9.84000015258789,
+                1.8715509176254272,
+                -0.1599999964237213
             ],
             "min" : [
-                -9.84000015258789,
-                -3.7284491062164307,
-                -3.9951400756835938
+                -10,
+                0.37155088782310486,
+                -19.84000015258789
             ],
             "type" : "VEC3"
         },
@@ -116,7 +116,7 @@
     "buffers" : [
         {
             "byteLength" : 840,
-            "uri" : "data:application/octet-stream;base64,pHAdwUSJkj2PwnXApHAdwUSJkj1gsH/ApHAdwemebsBgsH/ApHAdwemebsCPwnXApHAdwUSJkj1gsH/ASOGawESJkj1gsH/ASOGawOmebsBgsH/ApHAdwemebsBgsH/ASOGawESJkj1gsH/ASOGawESJkj2PwnXASOGawOmebsCPwnXASOGawOmebsBgsH/ASOGawESJkj2PwnXApHAdwUSJkj2PwnXApHAdwemebsCPwnXASOGawOmebsCPwnXApHAdwUSJkj2PwnXASOGawESJkj2PwnXASOGawESJkj1gsH/ApHAdwUSJkj1gsH/ApHAdwemebsCPwnXASOGawOmebsBgsH/ASOGawOmebsCPwnXApHAdwemebsBgsH/AAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAP//fz8AAACAAAAAAAAAgD8AAACAAAAAAP//fz8AAACAAAAAAAAAgD8AAACAAAAAAP//f78AAACAAAAAAP//f78AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgD9pHG88AACAP2kcbzzgmho9AAAAAOCaGj1pHG88AACAPwAAAD8AAIA/AAAAP+CaGj1pHG884JoaPQAAAD8AAIA/crwDPwAAgD9yvAM/4JoaPQAAAD/gmho9crwDPwAAgD8AAIA/AACAPwAAgD/gmho9crwDP+CaGj2+S/g+AAAAAAAAAAAAAAAAAAAAAOCZGj2+S/g+4JkaPQAAgD/gmRo9IdoDPwAAAAAh2gM/4JkaPQAAgD8AAAAAAAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEgATABAAFAAVABYAFQAUABcA"
+            "uri" : "data:application/octet-stream;base64,AAAgwes7vj4K1yO+pHAdwes7vj4K1yO+pHAdwfuO7z8K1yO+AAAgwfuO7z8K1yO+pHAdwes7vj4K1yO+pHAdwes7vj5SuJ7BpHAdwfuO7z9SuJ7BpHAdwfuO7z8K1yO+pHAdwes7vj5SuJ7BAAAgwes7vj5SuJ7BAAAgwfuO7z9SuJ7BpHAdwfuO7z9SuJ7BAAAgwes7vj5SuJ7BAAAgwes7vj4K1yO+AAAgwfuO7z8K1yO+AAAgwfuO7z9SuJ7BpHAdwes7vj4K1yO+AAAgwes7vj4K1yO+AAAgwes7vj5SuJ7BpHAdwes7vj5SuJ7BpHAdwfuO7z8K1yO+AAAgwfuO7z9SuJ7BAAAgwfuO7z8K1yO+pHAdwfuO7z9SuJ7BAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8K16M7AACAPwrXozuwC7Q9AAAAALALtD0K16M7AACAPwAAAD8AAIA/AAAAP7ALtD0K16M7sAu0PQAAAD8AAIA/rkcBPwAAgD+uRwE/sAu0PQAAAD+wC7Q9rkcBPwAAgD8AAIA/AACAPwAAgD+wC7Q9rkcBP7ALtD187/0+OAu0PXzv/T4AAAAAAAAAAAAAAAAAAAAAOAu0PQAAgD8AAAAAQggBPzgLtD0AAIA/OAu0PUIIAT8AAAAAAAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEgATABAAFAAVABYAFQAUABcA"
         }
     ]
 }
