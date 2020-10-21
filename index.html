@@ -13,7 +13,8 @@
     <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
 </head>
 <body>
-     <a-scene physics="gravity:-9">
+     <a-scene physics="gravity:-9es un static body?
+     ">
      <!-- <a-scene physics="gravity:-9; debug:true">     -->
          
  
@@ -49,6 +50,7 @@
             <a-asset-item id="s-pared03" src="./assets/s-pared03.gltf"></a-asset-item> 
             <a-asset-item id="s-pared04" src="./assets/s-pared04.gltf"></a-asset-item>
             <a-asset-item id="s-suelo01" src="./assets/s-suelo.gltf"></a-asset-item> 
+            <a-asset-item id="caja-glow" src="./assets/caja-glow"></a-asset-item>
            
             <img id="parque" src="./assets/parque.jpg">
             <img id="concreto" src="./assets/concreto.jpg">
@@ -60,8 +62,8 @@
         <!-- <a-box static-body position="0 0 2" width="1" height="1" rotation="45 45 45" src="#concreto"></a-box> -->
         <a-entity light="color: #ffcc85; groundColor: #ffffff" position="0 12 -16" rotation=""></a-entity>
         <a-entity light="type: spot; color: #ffdf6b"></a-entity>
-        <!-- <a-entity sound="src:#thunder; autoplay: true" position=" 1 2 3"></a-entity> -->
-        
+        <a-entity sound="src:#thunder; autoplay: true" position=" 1 2 3"></a-entity>
+                
        
         <!-- ANTRO PISO 1 -->
         <a-entity static-body gltf-model="assets/suelo01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity> 
@@ -113,6 +115,8 @@
         loop:true;"
         
        ></a-entity>
+
+       <a-entity static-body gltf-model="assets/casa-glow.gltf" scale="1 1 1" position="-1 0.8 5"></a-entity>        
             
     
     </a-scene>
