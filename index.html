@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!kmDOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,16 +13,18 @@
     <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
 </head>
 <body>
-     <a-scene physics="gravity:-9es un static body?
-     ">
-     <!-- <a-scene physics="gravity:-9; debug:true">     -->
+     <a-scene physics="gravity:-9">
+     <!-- <a-scene physics="gravity:-9; debug:true">     --> 
          
  
-       <a-entity id="rig" movement-controls kinematic-body>
+         <a-entity id="rig" movement-controls kinematic-body>
          <a-entity id="camera" camera position="0 2 0" look-controls></a-entity>
          </a-entity> 
 
         <a-assets>
+
+            <a-asset-item id="tree-obj" src="https://rawgit.com/mrdoob/three.js/dev/examples/obj/cubes/cubes.obj"></a-asset-item>
+            <a-asset-item id="tree-mtl" src="https://rawgit.com/mrdoob/three.js/dev/examples/obj/cubes/cubes.mtl"></a-asset-item>
             
             <a-asset-item id="bbhermoso" src="./assets/bbhermoso.gltf"></a-asset-item>
             <a-asset-item id="suelo01" src="./assets/suelo01.gltf"></a-asset-item>   
@@ -50,13 +52,21 @@
             <a-asset-item id="s-pared03" src="./assets/s-pared03.gltf"></a-asset-item> 
             <a-asset-item id="s-pared04" src="./assets/s-pared04.gltf"></a-asset-item>
             <a-asset-item id="s-suelo01" src="./assets/s-suelo.gltf"></a-asset-item> 
-            <a-asset-item id="caja-glow" src="./assets/caja-glow"></a-asset-item>
+            <a-asset-item id="s-suelo01" src="./assets/caja-glow.gltf"></a-asset-item> 
            
             <img id="parque" src="./assets/parque.jpg">
             <img id="concreto" src="./assets/concreto.jpg">
             <audio id="thunder" src="./assets/thunder.mp3" preload="auto"></audio>
             
         </a-assets>
+        <a-entity glow="enabled:true; scale:3.3" obj-model="obj: #tree-obj; mtl: #tree-mtl" position="-30 0 -40" opacity="0.9"></a-entity>
+
+        <a-box glow="enabled:true" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+        <a-sphere glow="enabled:true; scale:1.3" position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+        <a-cylinder glow="side: front; scale:1.3; c: 1; p: 1.3; color: #FF00FF;" position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+        
+       
+
         <a-entity environment="preset: starry"></a-entity>    
 
         <!-- <a-box static-body position="0 0 2" width="1" height="1" rotation="45 45 45" src="#concreto"></a-box> -->
@@ -97,7 +107,7 @@
         <a-entity static-body gltf-model="assets/s-pared01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
         <a-entity static-body gltf-model="assets/s-suelo01.gltf" scale="1 1 1" position="0 0 -1.5"></a-entity>
 
-
+        <!-- <a-entity static-body gltf-model="assets/caja-glow.gltf" scale="1 1 1" position="0 1 -5"  emissive="#000"></a-entity> -->
 
 
         <a-entity static-body gltf-model="assets/bbhermoso.gltf" scale="0.4 0.4 0.4" position="-1 0.8 -12"
@@ -116,7 +126,7 @@
         
        ></a-entity>
 
-       <a-entity static-body gltf-model="assets/casa-glow.gltf" scale="1 1 1" position="-1 0.8 5"></a-entity>        
+               
             
     
     </a-scene>
